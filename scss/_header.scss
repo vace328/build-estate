@@ -8,11 +8,14 @@ header {
     padding: 10px 0;
   }
   li {
+    padding: 16px 0;
+  }
+  li a {
+    text-decoration: none;
     color: $fc-lvl1;
     text-transform: uppercase;
     font-family: "RobotoBold";
     font-size: $fs-medium;
-    padding: 18px 0;
     &:hover {
       color: $accent-color2;
       cursor: pointer;
@@ -112,9 +115,12 @@ header {
     }
   }
   header nav li {
-    display: inline;
-    font-size: $fs-small;
+    display: inline;    
     padding: 0;
+  }
+
+  header nav li a {
+    font-size: $fs-small;
   }
   header nav li:not(:last-of-type) {
     margin-right: 20px;
