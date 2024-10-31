@@ -1,0 +1,118 @@
+.contact {
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.contact-card {
+  //  flex-basis: 50%;
+  //  flex-grow: 1;
+  padding: 40px;
+  flex: 1 1 50%;
+  &:first-of-type {
+    background-color: $accent-color3;
+  }
+  &:nth-of-type(2) {
+    background-color: $accent-color4;
+    h3 {
+        margin-bottom: 30px;
+    }
+  }
+  &:nth-of-type(3) {
+    background-color: $accent-color5;
+  }
+  &:nth-of-type(4) {
+    background-color: $accent-color1;
+    img {
+      height: 150px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.contact-card > * {
+    color: $fc-lvl1;
+    text-align: center;
+}
+
+.contact-card h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.contact-card p {
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+
+// map
+.map-wrapper {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+iframe.map {
+    width: 100%;
+    border: none;
+    height: 400px;
+}
+
+// form
+.form-wrapper {
+  padding: 20px 20px;
+}
+
+input, textarea {
+  width: 100%;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: $accent-color2;
+  padding: 10px 40px;
+  border: none;
+  color: $fc-lvl1;
+  &:hover {
+    background-color: darken($accent-color2, 10%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .input-wrapper {
+    flex-direction: row;
+  }
+  input[type="text"],  input[type="email"] {
+    margin-right: 10px;
+  }
+  .form-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-card {
+   flex: 1 1 25%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+  }
+}

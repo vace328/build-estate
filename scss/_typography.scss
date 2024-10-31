@@ -1,0 +1,16 @@
+p, h2, h3, ul, li, input, textarea, button {
+    font-family: $ff-default;
+    color: $fc-lvl3;
+    font-size: $fs-default;
+}
+
+h2 {
+    font-size: $fs-large;
+    text-transform: capitalize;
+    color: $fc-lvl4;
+}
+
+footer ul> li, footer p{
+    color: $fc-lvl1;
+    font-family: $ff-default;
+}

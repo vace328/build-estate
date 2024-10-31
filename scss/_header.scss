@@ -1,0 +1,135 @@
+header {
+  text-align: center;
+  padding-top: 30px;
+  nav {
+    background-color: $accent-color1;
+    width: 85%;
+    margin: 0 auto 30px auto;
+    padding: 10px 0;
+  }
+  li {
+    color: $fc-lvl1;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    font-size: $fs-medium;
+    padding: 18px 0;
+    &:hover {
+      color: $accent-color2;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo {
+  font-size: $fs-xl;
+  font-family: "RobotoBlack";
+  margin-bottom: 20px;
+  span:first-of-type {
+    color: $accent-color2;
+    padding-left: 10px;
+    border-top: 5px solid $fc-lvl2;
+    border-left: 5px solid $fc-lvl2;
+    border-bottom: 5px solid $fc-lvl2;
+  }
+  span:last-of-type {
+      color: $fc-lvl2;
+  }
+}
+
+.banner {
+  height: 500px;
+  background-image: url("../images/banner3.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  p {
+    color: $fc-lvl1;
+    text-transform: uppercase;
+    font-size: $fs-xl;
+    font-family: 'RobotoRegular';
+    margin-bottom: 40px;
+    padding: 0 10%;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .hero-btn {
+    border-radius: 20px;
+    font-family: "RobotoRegular";
+    font-size: $fs-default;
+    color: $fc-lvl1;
+    border: unset;
+    padding: 10px 30px;
+    background-color: $accent-color5;
+    &:hover {
+      background-color: darken($accent-color5, 10%);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    position: relative;
+    min-height: 600px;
+  }
+  .banner {
+    min-height: 600px;
+    width: 100%;
+    p {
+      font-size: $fs-large;
+      padding: 0 3%;
+    }
+  }
+  .banner, .nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .nav-wrapper {
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  header nav {
+    width: auto;
+    margin: 0;
+    background-color: unset;
+  }
+  .logo {
+    margin: 0;
+    font-size: $fs-medium;
+    span:first-of-type {
+      border-top: 4px solid $fc-lvl1;
+      border-left: 4px solid $fc-lvl1;
+      border-bottom: 4px solid $fc-lvl1;
+    }
+    span:last-of-type {
+      color: $fc-lvl1;
+    }
+  }
+  header nav li {
+    display: inline;
+    font-size: $fs-small;
+    padding: 0;
+  }
+  header nav li:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner {
+    padding-left: 30px;
+    padding-right: 30px;
+    p {
+      width: 100%;
+      padding: 0px;
+      font-size: $fs-xl;
+      font-family: $ff-light;
+    }
+  }
+}

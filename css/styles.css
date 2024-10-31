@@ -1,0 +1,672 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+}
+
+@font-face {
+  font-family: RobotoBlack;
+  src: url("../fonts/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: RobotoBlackItalic;
+  src: url("../fonts/Roboto-BlackItalic.ttf");
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: RobotoBoldItalic;
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+}
+@font-face {
+  font-family: RobotoBoldItalic;
+  src: url("../fonts/Roboto-BoldItalic.ttf");
+}
+@font-face {
+  font-family: RobotoItalic;
+  src: url("../fonts/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: RobotoLightItalict;
+  src: url("../fonts/Roboto-LightItalic.ttf");
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: RobotoMediumItalict;
+  src: url("../fonts/Roboto-MediumItalic.ttf");
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: RobotoThin;
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: RobotoThinItalic;
+  src: url("../fonts/Roboto-ThinItalic.ttf");
+}
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/fontawesome-webfont.ttf");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Glyphicons Halflings";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype");
+}
+.arrow-r:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e092";
+  font-size: 14px;
+  color: rgb(243, 156, 18);
+  margin-right: 10px;
+}
+
+.phone-icon:before, .mail-icon:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e145";
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.mail-icon:before {
+  content: "✉";
+}
+
+.mail-icon:before {
+  content: "✉";
+}
+
+.fb:before, .tw:before, .rss:before, .vk:before, .pin:before {
+  font-family: "FontAwesome";
+  content: "\f09a";
+  font-size: 24px;
+}
+
+.tw:before {
+  content: "\f099";
+}
+
+.rss:before {
+  content: "\f09e";
+}
+
+.vk:before {
+  content: "\f189";
+}
+
+.pin:before {
+  content: "\f041";
+  margin-right: 10px;
+}
+
+.soc-icon:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.soc-icon {
+  cursor: pointer;
+}
+
+p, h2, h3, ul, li, input, textarea, button {
+  font-family: RobotoRegular;
+  color: rgb(88, 80, 80);
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: rgb(0, 0, 0);
+}
+
+footer ul > li, footer p {
+  color: rgb(255, 255, 255);
+  font-family: RobotoRegular;
+}
+
+header {
+  text-align: center;
+  padding-top: 30px;
+}
+header nav {
+  background-color: rgb(127, 194, 247);
+  width: 85%;
+  margin: 0 auto 30px auto;
+  padding: 10px 0;
+}
+header li {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+  font-size: 24px;
+  padding: 18px 0;
+}
+header li:hover {
+  color: rgb(243, 156, 18);
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 42px;
+  font-family: "RobotoBlack";
+  margin-bottom: 20px;
+}
+.logo span:first-of-type {
+  color: rgb(243, 156, 18);
+  padding-left: 10px;
+  border-top: 5px solid rgb(119, 119, 119);
+  border-left: 5px solid rgb(119, 119, 119);
+  border-bottom: 5px solid rgb(119, 119, 119);
+}
+.logo span:last-of-type {
+  color: rgb(119, 119, 119);
+}
+
+.banner {
+  height: 500px;
+  background-image: url("../images/banner3.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.banner p {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 42px;
+  font-family: "RobotoRegular";
+  margin-bottom: 40px;
+  padding: 0 10%;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.banner .hero-btn {
+  border-radius: 20px;
+  font-family: "RobotoRegular";
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: unset;
+  padding: 10px 30px;
+  background-color: rgb(51, 105, 230);
+}
+.banner .hero-btn:hover {
+  background-color: #194fcd;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    position: relative;
+    min-height: 600px;
+  }
+  .banner {
+    min-height: 600px;
+    width: 100%;
+  }
+  .banner p {
+    font-size: 30px;
+    padding: 0 3%;
+  }
+  .banner, .nav-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .nav-wrapper {
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+  }
+  header nav {
+    width: auto;
+    margin: 0;
+    background-color: unset;
+  }
+  .logo {
+    margin: 0;
+    font-size: 24px;
+  }
+  .logo span:first-of-type {
+    border-top: 4px solid rgb(255, 255, 255);
+    border-left: 4px solid rgb(255, 255, 255);
+    border-bottom: 4px solid rgb(255, 255, 255);
+  }
+  .logo span:last-of-type {
+    color: rgb(255, 255, 255);
+  }
+  header nav li {
+    display: inline;
+    font-size: 14px;
+    padding: 0;
+  }
+  header nav li:not(:last-of-type) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .banner p {
+    width: 100%;
+    padding: 0px;
+    font-size: 42px;
+    font-family: RobotoLight;
+  }
+}
+.about .subsections {
+  display: flex;
+  flex-direction: column;
+}
+.about p {
+  color: rgb(0, 0, 0);
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+.about ul li {
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.about img {
+  display: block;
+  margin: 0 auto 30px auto;
+  width: 100%;
+}
+
+p.accent-p {
+  color: rgb(51, 105, 230);
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+@media only screen and (min-width: 768px) {
+  .about .subsections {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .subsection {
+    flex: 0 0 49%;
+  }
+  .subsection:nth-of-type(3) {
+    flex: 0 0 100%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about .subsections {
+    justify-content: center;
+    display: inline-flexbox;
+    gap: 50px;
+  }
+  .subsection {
+    max-width: 320px;
+    flex-basis: auto;
+  }
+}
+.reviews-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.review {
+  background-color: rgb(127, 194, 247);
+  margin-bottom: 20px;
+  padding: 30px;
+}
+.review header {
+  padding-top: unset;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.review .profile-img-wrapper {
+  width: 114px;
+  height: 114px;
+  border: 3px solid white;
+  border-radius: 50%;
+  padding-top: 4px;
+  padding-left: 4px;
+  margin-right: 10px;
+}
+.review img {
+  display: block;
+  border-radius: 50%;
+  width: 100px;
+  position: relative;
+  z-index: 1000;
+}
+.review .profile-name-wrapper {
+  padding-top: 20px;
+  text-align: left;
+  display: block;
+}
+.review .profile-name-wrapper h3 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-family: RobotoBold;
+}
+.review .stars span:before {
+  font-family: "FontAwesome";
+  content: "\f005";
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+}
+.review p {
+  color: rgb(255, 255, 255);
+  line-height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .reviews-card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .review {
+    flex: 0 0 49%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .reviews-card-wrapper {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .review {
+    flex: 1 1 450px;
+    margin-bottom: 0;
+  }
+  .review:last-of-type {
+    flex-grow: 1;
+  }
+}
+.contact {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact-cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  padding: 40px;
+  flex: 1 1 50%;
+}
+.contact-card:first-of-type {
+  background-color: rgb(44, 221, 152);
+}
+.contact-card:nth-of-type(2) {
+  background-color: rgb(255, 79, 129);
+}
+.contact-card:nth-of-type(2) h3 {
+  margin-bottom: 30px;
+}
+.contact-card:nth-of-type(3) {
+  background-color: rgb(51, 105, 230);
+}
+.contact-card:nth-of-type(4) {
+  background-color: rgb(127, 194, 247);
+}
+.contact-card:nth-of-type(4) img {
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-card > * {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.contact-card h3 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-card p {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.map-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+iframe.map {
+  width: 100%;
+  border: none;
+  height: 400px;
+}
+
+.form-wrapper {
+  padding: 20px 20px;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: rgb(243, 156, 18);
+  padding: 10px 40px;
+  border: none;
+  color: rgb(255, 255, 255);
+}
+button:hover {
+  background-color: #c87f0a;
+}
+
+@media only screen and (min-width: 768px) {
+  .input-wrapper {
+    flex-direction: row;
+  }
+  input[type=text], input[type=email] {
+    margin-right: 10px;
+  }
+  .form-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-card {
+    flex: 1 1 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+footer {
+  background-color: rgb(33, 33, 33);
+  text-align: center;
+}
+footer ul {
+  width: 100%;
+  margin-bottom: 30px;
+}
+footer li {
+  display: inline-block;
+}
+footer li:not(:last-of-type) {
+  margin-right: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+section, footer {
+  padding: 60px 50px 30px 50px;
+}
+section h2, footer h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.deco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.one, .two, .three {
+  display: block;
+}
+
+.one, .three {
+  border-bottom: 2px solid black;
+  width: 50px;
+}
+
+.one {
+  margin-right: 4px;
+}
+
+.three {
+  margin-left: 4px;
+}
+
+.two {
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  border: 2px solid black;
+}
+
+svg {
+  fill: palegreen;
+  width: 15px;
+  height: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .one, .three {
+    width: 100px;
+  }
+}/*# sourceMappingURL=styles.css.map */

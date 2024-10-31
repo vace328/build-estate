@@ -1,0 +1,46 @@
+.arrow-r:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e092";
+  font-size: $fs-small;
+  color: $accent-color2;
+  margin-right: 10px;
+}
+
+.phone-icon:before, .mail-icon:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e145";
+  font-size: $fs-small;
+  margin-right: 10px;
+}
+.mail-icon:before {
+  content: "\2709";
+}
+.mail-icon:before {
+  content: "\2709";
+}
+
+.fb:before, .tw:before, .rss:before, .vk:before, .pin:before {
+  font-family: "FontAwesome";
+  content: "\f09a";
+  font-size: $fs-medium;
+  // margin-right: 10px;
+}
+.tw:before {
+  content: "\f099";
+}
+.rss:before {
+  content: "\f09e";
+}
+.vk:before {
+  content: "\f189";
+}
+.pin:before {
+  content: "\f041";
+  margin-right: 10px;
+}
+.soc-icon:not(:last-of-type) {
+  margin-right: 20px;
+}
+.soc-icon {
+  cursor: pointer;
+}
