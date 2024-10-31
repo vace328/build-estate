@@ -8,10 +8,9 @@
   flex-wrap: wrap;
 }
 .contact-card {
-  //  flex-basis: 50%;
-  //  flex-grow: 1;
-  padding: 40px;
-  flex: 1 1 50%;
+  padding: 40px 20px;
+  flex: 0 0 50%;
+  max-width: 50%;
   &:first-of-type {
     background-color: $accent-color3;
   }
@@ -48,6 +47,12 @@
     line-height: 30px;
 }
 
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 // map
 .map-wrapper {
@@ -114,12 +119,5 @@ button {
    align-items: center;
    flex-direction: column;
    justify-content: center;
-  }
-}
-
-
-@media only screen and (max-width: 520px) {
-  .contact-cards {
-   flex-direction: column;
   }
 }
