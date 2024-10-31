@@ -14,3 +14,11 @@ footer ul> li, footer p{
     color: $fc-lvl1;
     font-family: $ff-default;
 }
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: $fs-large;
+        text-transform: capitalize;
+        color: $fc-lvl4;
+    }
+}
