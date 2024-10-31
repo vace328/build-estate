@@ -42,15 +42,39 @@
       font-family: $ff-bold;
     }
   }
-  .stars span:before {
-    font-family: "FontAwesome";
-    content: "\f005";
-    font-size: $fs-small;
-    color: $fc-lvl1;
-
-    // background: rgb(131,126,222);
-    // background: linear-gradient(90deg, rgba(131,126,222,1) 50%, rgba(171,45,45,1) 50%);
+  .star-wrapper {
+    width: 18px;
+    height: 18px;
+    aspect-ratio: 1;
+    background: $fc-lvl1;
+    clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
+  .star {
+    width: 12px;
+    height: 12px;
+    aspect-ratio: 1;
+    background: $fc-lvl1;
+    clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+    display: block;
+  }
+  .star.last {
+    background: linear-gradient(
+      90deg,
+      $fc-lvl1 50%,
+      $accent-color1 50%
+    );
+  }
+
+  // initial stars solution
+  // .stars span:before {
+  //   font-family: "FontAwesome";
+  //   content: "\f005";
+  //   font-size: $fs-small;
+  //   color: $fc-lvl1;
+  // }
   p {
     color: $fc-lvl1;
     line-height: 30px;
