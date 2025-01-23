@@ -1,6 +1,6 @@
 # BIT Build Estate CSS Project 1
 
-Corporate landing page build with HTML5, CSS/SCSS
+Corporate landing page built with HTML5, CSS/SCSS
 
 ### Links
 
